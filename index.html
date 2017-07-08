@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    
+    <div class="container">
+      <h1>JS Issue Tracker</h1>
+
+      <!-- JUMBOTRON COMPONENT TO CREATE A PANEL -->
+
+      <div class="jumbotron">
+        <h2>Add New Issue</h2>
+
+        <!-- The form starts here -->
+      
+        <form action="">
+          <div class="form-group">
+
+            <!-- "Issue" input field -->
+            
+            <label for="formGroupExampleInput"><strong>Issue:</strong></label>
+            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+              <div class="input-group-addon"><i class="fa fa-github"></i></div>
+              <input id="input1" type="text" class="form-control" id="formGroupExampleInput" placeholder="Describe the issue...">
+            </div>
+          </div>
+
+            <!-- "Severity" multiple option field -->
+  
+          <div class="form-group">
+            <label for="formGroupExampleInput"><strong>Severity:</strong></label>
+            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+    
+              <div class="input-group-addon"><i class="fa fa-clock-o"></i></div>
+              <select class="form-control custom-select mb-2 mr-sm-2 mb-sm-0" id="priority">
+                <!-- <option selected>Choose Severity </option>-->
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+              </select>
+            </div>
+          </div>
+
+            <!-- "Assign To" input field -->
+  
+          <div class="form-group">
+            <label for="formGroupExampleInput"><strong>Assign To:</strong></label>
+            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+              <div class="input-group-addon"><i class="fa fa-user"></i></div>
+              <input type="text" class="form-control" id="assignTo" placeholder="Enter person responsible for...">
+            </div>
+          </div>
+
+          <!-- "Track Issue" button -->
+
+          <button id="track" class="btn btn-primary">Track Issue</button>
+
+        </form>
+      </div>
+    </div> 
+    <!--end of container-->
+    
+    
+    <!--issue section-->
+    <div id="issue-section">
+      
+    </div>
+  
+
+
+
+
+
+
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="http://wzrd.in/standalone/uuid%2Fv4@latest"></script>
+    
+    <script type="text/javascript" src="app.js"></script>
+  
+  </body>
+</html>
